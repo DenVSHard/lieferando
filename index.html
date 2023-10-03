@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferando</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="icon" href="img/logoTitel.jpg">
+</head>
+
+<body onload="mainMenu();">
+
+    <header>
+        <div>
+            <img onclick="reloadPage()" class="logo" src="img/logo.jpg" alt="logo">
+        </div>
+        <div style="font-family: cursive; font-size: 16px; margin-right: 56px;">
+            Speisekarte
+        </div>
+        <div class="menuContainer">
+            <button onclick="warnung()"><img class="menu" src="img/german.jpg" alt="Deutsche Sprache"></button>
+            <button onclick="warnung2()"><img class="menu" src="img/menu.png" alt="menu"></button>
+        </div>
+    </header>
+
+    <div class="orderBox" id="warenkorb">
+        <h3 class="korb">Warenkorb</h3>
+        <div>
+            <p class="pay" id="totalPrice"><strong>Fülle deinen Warenkorb</strong></p>
+        </div>
+    </div>
+    <div class="restaurantName">
+        <div>
+            <img class="burgerImg" src="img/burger.avif" alt="burgerBild">
+            <img class="burgerLogo" src="img/BurgerLogo.jpg" alt="BurgerLogo">
+        </div>
+        <div class="name">
+            <h2>Burger Queen</h2>
+            ⭐⭐⭐⭐⭐
+            <a href="https://www.lieferando.de/" style="cursor: pointer;">906 Bewertungen</a>
+        </div>
+    </div>
+    <div class="diner">
+        <div style="margin-left: 68px;">
+            <h3>Burger</h3>
+        </div>
+        <div id="menu"></div>
+    </div>
+    <footer>
+        <a href="https://www.lieferando.de/" style="cursor: pointer;">Ein Restaurant empfehlen</a>
+        <a href="https://www.lieferando.de/" style="cursor: pointer;">Ein Restaurant anmelden</a>
+        <a href="https://www.lieferando.de/" style="cursor: pointer;">Jobs</a>
+        <a href="https://www.lieferando.de/" style="cursor: pointer;">AGB</a>
+        <a href="https://www.lieferando.de/" style="cursor: pointer;">Datenschutzerklärung</a>
+        <a href="https://www.lieferando.de/" style="cursor: pointer;">Impressum</a>
+        <a href="https://www.lieferando.de/" style="cursor: pointer;">Verwendung von Cookies</a>
+        <a href="https://www.lieferando.de/" style="cursor: pointer;">Bug Bounty</a>
+        <a href="https://www.lieferando.de/" style="cursor: pointer;">Ethik-Hotline</a>
+    </footer>
+
+</body>
+
+</html>

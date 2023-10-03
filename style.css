@@ -1,0 +1,305 @@
+body {
+    margin: 0px;
+}
+
+h2 {
+    font-family: 'circular';
+    font-size: 36px;
+}
+
+h3 {
+    font-family: 'circular';
+    font-size: 28px;
+    line-height: 96px;
+}
+
+h4 {
+    font-family: 'circular';
+    font-size: 24px;
+}
+
+p {
+    font-family: 'circular';
+    line-height: 0px;
+}
+
+em {
+    font-family: 'circular';
+    line-height: 0px;
+}
+
+a {
+    font-family: 'circular';
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0%;
+    width: 100%;
+    box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 25%);
+    background-color: white;
+}
+
+button {
+    border: none;
+    background-color: white;
+}
+
+.korb {
+    font-family: 'circular';
+    font-size: 28px;
+    line-height: 96px;
+}
+
+.logo {
+    margin-left: 24px;
+    width: 148px;
+    cursor: pointer;
+}
+
+.menu {
+    width: 36px;
+    cursor: pointer;
+}
+
+.menuContainer {
+    margin-right: 24px;
+}
+
+.burgerImg {
+    max-width: 1054px;
+    width: 100%;
+    height: auto;
+    margin-top: -28px;
+}
+
+.burgerLogo {
+    width: 100%;
+    max-width: 124px;
+    height: auto;
+    margin-top: -64px;
+    margin-left: 68px;
+    box-shadow: 0 0 0 1px hsl(240deg 7% 62% / 43%);
+    border-radius: 8px;
+}
+
+.name {
+    max-width: 1054px;
+    width: 100%;
+    margin-left: 68px;
+}
+
+.diner {
+    position: absolute;
+    top: 658px;
+    background-color: rgb(252, 252, 252);
+    height: auto;
+    box-shadow: inset 0 0 12px 6px hsl(0deg 0% 0% / 12%);
+    max-width: 1054px;
+    width: 100%;
+    margin-top: -28px;
+}
+
+.price {
+    font-size: 24px;
+}
+
+.menuBox {
+    display: inline-block;
+    padding: 12px;
+    margin-bottom: 16px;
+    margin-left: 68px;
+    width: 896px;
+    box-shadow: 0px 0px 1px 0px rgb(0 0 0);
+    border-radius: 16px;
+    background-color: white;
+    line-height: 8px;
+}
+
+.orderBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'circular';
+    position: fixed;
+    text-align: center;
+    margin-left: 1054px;
+    z-index: 100;
+    top: 78px;
+    width: 29.5%;
+    max-height: 560px;
+    overflow-y: auto;
+    background-color: white;
+}
+
+.restaurantName {
+    position: absolute;
+    top: 126px;
+    height: 532px;
+    max-width: 1054px;
+    width: 100%;
+    box-shadow: inset 0px 8px 12px 6px hsl(0deg 0% 0% / 12%);
+}
+
+.plusIcon {
+    position: absolute;
+    width: 24px;
+    padding: 8px;
+    margin-left: 852px;
+    margin-top: -64px;
+    border-radius: 50%;
+    background-color: #8080802e;
+    cursor: pointer;
+}
+
+.plusIcon:hover {
+    background-color: gray;
+}
+
+.plusIconBasket {
+    width: 16px;
+    padding: 16px;
+    border-radius: 50%;
+    background-color: #8080802e;
+    cursor: pointer;
+}
+
+.plusIconBasket:hover {
+    background-color: gray;
+}
+
+.basket-item {
+    box-shadow: inset 0px 0px 8px 1px hsl(0deg 0% 0% / 35%);
+    width: 338px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.pay {
+    border-radius: 16px;
+    padding: 28px;
+    cursor: pointer;
+    background-color: rgb(255, 128, 0);
+}
+
+footer {
+    position: absolute;
+    top: 2068px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    align-items: center;
+    height: 128px;
+    width: 100%;
+    background-color: #80808029;
+}
+
+@media(max-width: 1424px) {
+    .orderBox {
+        display: block;
+    }
+
+    .basket-item {
+        display: none;
+    }
+
+    .korb {
+        display: none;
+    }
+
+    .pay {
+        position: fixed;
+        left: 50%;
+        top: 85%;
+        border-radius: 16px;
+        padding: 28px;
+        cursor: pointer;
+        background-color: rgb(255, 128, 0);
+    }
+}
+
+@media(max-width: 1054px) {
+    .burgerLogo {
+        max-width: 11%;
+        width: auto;
+        height: auto;
+    }
+}
+
+@media(max-width: 1000px) {
+    .menuBox {
+        display: inline-block;
+        padding: 12px;
+        margin-bottom: 16px;
+        margin-left: 68px;
+        width: 508px;
+        box-shadow: 0px 0px 1px 0px rgb(0 0 0);
+        border-radius: 16px;
+        background-color: white;
+        line-height: 8px;
+    }
+
+    .plusIcon {
+        position: absolute;
+        width: 24px;
+        padding: 8px;
+        margin-left: 460px;
+        margin-top: -64px;
+        border-radius: 50%;
+        background-color: #8080802e;
+        cursor: pointer;
+    }
+}
+
+@media(max-width: 830px) {
+    footer {
+        position: absolute;
+        top: 2068px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        font-size: 12px;
+        align-items: center;
+        height: 128px;
+        width: 100%;
+        background-color: #80808029;
+    }
+}
+
+@media(max-width: 625px) {
+    em {
+        display: none;
+    }
+
+    .plusIcon {
+        position: absolute;
+        width: 24px;
+        padding: 8px;
+        margin-left: 88px;
+        margin-top: 8px;
+        border-radius: 50%;
+        background-color: #8080802e;
+        cursor: pointer;
+    }
+
+    .menuBox {
+        display: inline-block;
+        padding: 12px;
+        margin-bottom: 16px;
+        margin-left: 68px;
+        width: 286px;
+        box-shadow: 0px 0px 1px 0px rgb(0 0 0);
+        border-radius: 16px;
+        background-color: white;
+        line-height: 8px;
+    }
+}
